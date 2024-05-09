@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@200;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+}
+
+.logo>img {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+#nav-bar,
+ul,
+li {
+    display: block;
+    margin: 5px;
+    padding: 5px;
+}
+
+@media only screen and (min-width: 768px) {
+
+    #nav-bar,
+    ul,
+    li {
+        display: flex;
+    }
+
+    .hero-img {
+        height: 400px;
+        width: 800px;
+        display: block;
+        /* margin-left: 28%;
+        margin-top: 10%; */
+        margin: 10% auto;
+        box-shadow: 0 0 5px blue;
+    }
+
+    iframe {
+        margin-top: 10%;
+        margin-left: 12%;
+        width: 800px;
+        height: 400px;
+        box-shadow: 0 0 10px blue, 0 0 15px blue, 0 0 20px blue;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    .hero-img {
+        height: auto;
+        width: 100%;
+        margin-top: 50%;
+    }
+
+    iframe {
+        width: 100%;
+        margin-top: 15%;
+        box-shadow: 0 0 10px blue;
+    }
+
+}
+
+#hero>h2 {
+    text-align: center;
+    color: white;
+}
+
+#hero>form {
+    text-align: center;
+}
+
+#features {
+    text-align: center;
+    font-family: 'Alumni Sans', sans-serif;
+    font-size: 20px;
+    color: white;
+}
+
+
+#pricing {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(100% / 3);
+    margin: 10px;
+    border: 1px solid #000;
+    border-radius: 3px;
+}
+
+.product>.level {
+    background-color: blue;
+    color: white;
+    padding: 15px 0;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 700;
+
+}
+
+.product>h2 {
+    margin-top: 15px;
+    color: blue;
+}
+
+.product>ol {
+    margin: 15px 0;
+}
+
+.product>ol>li {
+    padding: 5px 0;
+    text-align: justify;
+    font-family: 'Alumni Sans', sans-serif;
+    font-weight: 900;
+    color: white;
+}
+
+.product>button {
+    border: 0;
+    margin: 15px 0;
+    background-color: blue;
+    color: white;
+    font-weight: 400;
+}
+
+.product>button:hover {
+    background-color: rgb(4, 4, 29);
+    color: white;
+    transform: scale(1);
+    transition: background-color 1s;
+}
+
+@media (max-width: 800px) {
+    #pricing {
+        flex-direction: column;
+    }
+
+    .product {
+        max-width: 300px;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+}
+
+footer {
+    margin-top: 30px;
+    background-color: #ddd;
+    padding: 20px;
+}
+
+footer>ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer>ul>li {
+    padding: 0 10px;
+}
+
+footer>span {
+    margin-top: 5px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0.9em;
+    color: #444;
+}
